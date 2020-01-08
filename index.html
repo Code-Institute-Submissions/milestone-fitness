@@ -9,7 +9,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron:bold|Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:bold|Raleway:400,600,700,800&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
 	<script src="https://kit.fontawesome.com/d23270b885.js" crossorigin="anonymous"></script>
@@ -25,23 +26,52 @@
 			<div class="navburger"><i class="fas fa-bars fa-2x"></i></div>
 		</div>
 		<!-- /sm_screen -->
+
 		<div class="hero-img">
+
 			<!-- lg_screen -->
 			<div class="lg-header">
 				<div class="gym-logo text-uppercase">Milestone<span>Fitness Club</span></div>
 				<ul class="text-uppercase">
-                    <li><i class="fas fa-dumbbell d-md-block"></i>The Gym</li>
-                    <li><i class="fas fa-users d-md-block"></i>Membership</li>
-                    <li><i class="fas fa-info d-md-block"></i>General</li>
-                </ul>
+					<li class="dropdown">
+						<a href="javascript:void(0)"
+							class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
+							<i class="fas fa-sort-down"></i></a>
+						<div class="dropdown-content">
+							<div class="subitem">
+								<a href="#facilities" class="sublink text-uppercase">Facilities</a>
+								<div class="item_bg"></div>
+							</div>
+							<div class="subitem">
+								<a href="#timetable" class="sublink text-uppercase">Timetable</a>
+								<div class="item_bg"></div>
+							</div>
+							<div class="subitem">
+								<a href="#classes" class="sublink text-uppercase">Classes</a>
+								<div class="item_bg"></div>
+							</div>
+                        </div>
+					</li>
+					<li><a href="#membership"
+							class="navlink"><i class="fas fa-users fa-lg d-md-block"></i>Membership</a></li>
+					<li><a href="#info" class="navlink"><i class="fas fa-info fa-lg d-md-block"></i>General</a></li>
+				</ul>
 			</div>
 			<!-- /lg_screen -->
-		</div>  
+
+            <div class="call-to-action container-fluid">
+            <h1 class="text-uppercase">pump up the jam<br> pump it up</h1>
+            <button class="text-uppercase">Join!</button>
+            </div>
+
+		</div>
 	</div>
 	<!--- /landing_page -->
 
 
 	<!--- facilities --->
+    <div class="facilities">
+    </div>
 
 	<!--- /facilities --->
 
