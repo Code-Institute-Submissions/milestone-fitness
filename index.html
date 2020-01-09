@@ -19,66 +19,90 @@
 
 <body>
 	<!--- landing_page -->
-	<div class="">
-		<!-- sm_screen -->
-		<div class="sm-header">
-			<div class="gym-logo text-uppercase">Milestone<span>Fitness Club</span></div>
-			<div class="navburger"><i class="fas fa-bars fa-2x"></i></div>
-		</div>
-		<!-- /sm_screen -->
 
-		<div class="hero-img">
-
-			<!-- lg_screen -->
-			<div class="lg-header">
-				<div class="gym-logo text-uppercase">Milestone<span>Fitness Club</span></div>
-				<ul class="text-uppercase">
-					<li class="dropdown">
-						<a href="javascript:void(0)"
-							class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
-							<i class="fas fa-sort-down"></i></a>
-						<div class="dropdown-content">
-							<div class="subitem">
-								<a href="#facilities" class="sublink text-uppercase">Facilities</a>
-								<div class="item_bg"></div>
-							</div>
-							<div class="subitem">
-								<a href="#timetable" class="sublink text-uppercase">Timetable</a>
-								<div class="item_bg"></div>
-							</div>
-							<div class="subitem">
-								<a href="#classes" class="sublink text-uppercase">Classes</a>
-								<div class="item_bg"></div>
-							</div>
-                        </div>
-					</li>
-					<li><a href="#membership"
-							class="navlink"><i class="fas fa-users fa-lg d-md-block"></i>Membership</a></li>
-					<li><a href="#info" class="navlink"><i class="fas fa-info fa-lg d-md-block"></i>General</a></li>
-				</ul>
-			</div>
-			<!-- /lg_screen -->
-
-            <div class="call-to-action container-fluid">
-            <h1 class="text-uppercase">pump up the jam<br> pump it up</h1>
-            <button class="text-uppercase">Join!</button>
-            </div>
-
+	<!-- sm_screen -->
+	<div class="sm-header">
+		<div class="gym-logo text-uppercase text-center">Milestone<span>Fitness Club</span></div>
+		<div class="navburger text-right" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
 		</div>
 	</div>
+	<!-- /sm_screen -->
+
+	<div class="hero-img">
+		<div id="navslide" style="right: -100%"></div>
+        
+
+
+		<!-- lg_screen -->
+		<div class="lg-header">
+			<div class="gym-logo text-uppercase text-center">Milestone<span>Fitness Club</span></div>
+			<ul class="text-uppercase text-center">
+				<li class="dropdown">
+					<a href="javascript:void(0)"
+						class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
+						<i class="fas fa-sort-down"></i></a>
+					<div class="dropdown-content">
+						<div class="subitem">
+							<a href="#features" class="sublink text-uppercase">Facilities</a>
+							<div class="item_bg"></div>
+						</div>
+						<div class="subitem">
+							<a href="#timetable" class="sublink text-uppercase">Timetable</a>
+							<div class="item_bg"></div>
+						</div>
+						<div class="subitem">
+							<a href="#classes" class="sublink text-uppercase">Classes</a>
+							<div class="item_bg"></div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#membership" class="navlink"><i class="fas fa-users fa-lg d-md-block"></i>Membership</a>
+				</li>
+				<li><a href="#info" class="navlink"><i class="fas fa-info fa-lg d-md-block"></i>General</a></li>
+			</ul>
+		</div>
+		<!-- /lg_screen -->
+
+
+		<div class="call-to-action text-center">
+			<h1 class="text-uppercase"><span>pump up the jam</span><br><span>pump it up!</span></h1>
+			<button type="button" id="join-btn" class="text-uppercase btn-square">Join!</button><br>
+			<button type="button" id="login-btn" class="text-uppercase btn-square"><i class="fas fa-user"></i> Login</button>
+		</div>
+
+	</div>
+
 	<!--- /landing_page -->
 
 
 	<!--- facilities --->
-    <div class="facilities">
-    </div>
+	<div id="features">
+	</div>
 
 	<!--- /facilities --->
 
+	<!--- general deatils --->
+	<div id="info">
+	</div>
 
 	<!--- general deatils --->
 
-	<!--- general deatils --->
+	<script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+
+  var element = document.getElementById("navslide");
+  if (element.style.right === "-100%") {
+    element.style.right = "0";
+  } else {
+    element.style.right = "-100%";
+  }
+} 
+
+	</script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
 body {
     margin: 0; 
     padding: 0;
+    font-family: Raleway, sans-serif;
 }
 
-/* -------------------------layout------------------------- */
+/* -------------------------header------------------------- */
 .sm-header {
     background-image: linear-gradient(to right, rgba(0,255,255, 0.6), rgba(255,0,255, 0.6));
     height: 100px;
@@ -19,17 +20,17 @@ body {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     justify-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
     /*border: 1px solid black;*/
 }
-/* -------------------------layout------------------------- */
 
-
-/* -------------------------assets------------------------- */
+/* ----------assets---------- */
 .gym-logo {
     font-family: Orbitron, sans-serif;
     font-size: 2.2em;
     text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
-    text-align: center;
     line-height: 1.2;
     /*border: 1px solid black;*/
 }  
@@ -43,26 +44,34 @@ body {
 }
 
 .navburger {
-    padding: 20px;
+    padding: 10px;
     grid-column-start: 3;
     grid-column-end: 4;
-    text-align: right;
-    /*border: 1px solid black;*/   
+    cursor: pointer;
+    border: 1px solid black;  
 }
 
-.hero-img {
-    background-image: linear-gradient(to right, rgba(0,255,255, 0.6), rgba(255,0,255, 0.6)), url('../images/photo-of-woman-jumping-1921761.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 90vh;
-    margin: 0;
-    /*border: 1px solid black;*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.4s;
 }
-/* -------------------------assets------------------------- */
 
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
 
-/* -------------------------nav links------------------------- */
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* ----------assets---------- */
+/* ----------nav links---------- */
 ul {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -75,10 +84,7 @@ ul {
 
 li {
     margin-right: 40px;
-    font-family: Raleway;
     font-weight: 600;
-    text-align: center;
-    color: #000;
     /*border: 1px solid black;*/
 }
 
@@ -86,23 +92,20 @@ li i {
     margin-bottom: 5px;
 }
 
-a:link, a:visited, a:hover, a:active {
+li a:link, a:visited, a:hover, a:active {
     color: #000;
-    text-align: center;
     text-decoration: none;
 }
 
 .navlink {
     display: inline-block;
-    color: #000000;
     padding: 14px 0;
     position: relative;
-    text-decoration: none;
     /*border: 1px solid black;*/
 }
 
 .navlink::after {
-    /* creating the underline element */
+    /* creates the underline element */
     content: "";
     position: absolute;
     top: 80%;
@@ -123,7 +126,6 @@ li:hover .navlink::after {
 .dropdown-content {  
     display: none;
     position: absolute;
-    text-align: center;
     min-width: 100px;
     z-index: 1;
     /*border: 1px solid black;*/
@@ -131,8 +133,8 @@ li:hover .navlink::after {
 
 .subitem {
     position: relative;
+    margin-left: -15px;
     /*border: 1px solid black;*/
-
 }
 
 .item_bg { 
@@ -148,13 +150,11 @@ li:hover .navlink::after {
 }
 
 .sublink {
-    margin: 5px;
+    margin: 5px 0;
     font-weight: 400;
     font-size: 14px;
-    display: table;
     z-index: 3;
     position: relative;
-    left: 0;
     -webkit-transition: left 0.5s ease-in-out;
     transition: left 0.5s ease-in-out;
     /* border: 1px solid black; */
@@ -167,32 +167,93 @@ li:hover .navlink::after {
 .subitem:hover .item_bg {
     width: 100%;
 }
-/* -------------------------nav links------------------------- */
 
-/* -------------------------section------------------------- */
-.call-to-action {
-    text-align: center;
+#navslide {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top:0;
+    background-color: #fff;
+    -webkit-transition: right 2s ease; /* For Safari 3.1 to 6.0 */
+    transition: right 2s ease;
 }
+/* ----------nav links---------- */
+/* -------------------------header------------------------- */
 
-.call-to-action h1 {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #000;
-    line-height: 2.0;
-    margin: auto;
-}
 
-.facilities {
-    background-image: radial-gradient(rgba(0,0,0, 1.0), rgba(0,0,0, 0.4)), url('../images/man-carrying-barbel-791763.jpg');
+
+/* -------------------------call to action------------------------- */
+.hero-img {
+    background-image: linear-gradient(to right, rgba(0,255,255, 0.6), rgba(255,0,255, 0.6)), url('../images/photo-of-woman-jumping-1921761.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 95vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /*border: 3px solid blue;*/
+}
+
+.call-to-action {
+    margin: 10px;
+    /*border: 1px solid black;*/
+}
+
+.call-to-action h1 span {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(243,247,247);
+    background-color: #000;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.btn-square {
+    border-radius: 0;
+    width: 100px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+#join-btn {
+    background-color: #fff;
+    margin: 5px;
+    border-width: 0;
+}
+
+#login-btn {
+    background-color: rgb(0,255,255);
+    margin: 5px;
+}
+/* -------------------------call-to-action------------------------- */
+
+
+
+/* -------------------------facilities------------------------- */
+#features {
+    background-image: radial-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 1.0)), url('../images/man-carrying-barbel-791763.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
     margin: 0;
     /*border: 1px solid black;*/
 }
-/* -------------------------section------------------------- */
+/* -------------------------facilities------------------------- */
+
+
+/* ------------------------- General ------------------------- */
+#info {
+    background-color: rgb(0,255,255);
+    height: 400px;
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+/* ------------------------- General ------------------------- */
 
 
 
