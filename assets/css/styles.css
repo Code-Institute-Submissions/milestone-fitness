@@ -4,14 +4,20 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+
+
 /* -------------------------header------------------------- */
 .sm-header {
-    background-image: linear-gradient(to right, rgba(0,255,255, 0.6), rgba(255,0,255, 0.6));
+    background-image: linear-gradient(to right, rgba(0,255,255, 0.6), rgba(255,0,255, 0.6)), linear-gradient( rgb(255,255,255), rgb(255,255,255)) ;
     height: 100px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-content: center;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index:1;
 }
 
 .lg-header {
@@ -29,6 +35,7 @@ body {
 /* ----------assets---------- */
 .gym-logo {
     font-family: Orbitron, sans-serif;
+    font-weight: 700;
     font-size: 2.2em;
     text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
     line-height: 1.2;
@@ -43,12 +50,18 @@ body {
     display: block;
 }
 
-.navburger {
-    padding: 10px;
+.burger-container {
+    text-align: right;
     grid-column-start: 3;
     grid-column-end: 4;
+}
+
+.navburger {
+    margin-right: 5px;
+    padding: 10px;
     cursor: pointer;
-    border: 1px solid black;  
+    display: inline-block;
+    /*border: 1px solid black;*/  
 }
 
 .bar1, .bar2, .bar3 {
@@ -70,6 +83,7 @@ body {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
 /* ----------assets---------- */
 /* ----------nav links---------- */
 ul {
@@ -133,7 +147,8 @@ li:hover .navlink::after {
 
 .subitem {
     position: relative;
-    margin-left: -15px;
+    margin: 5px 0 5px -15px;
+
     /*border: 1px solid black;*/
 }
 
@@ -150,7 +165,7 @@ li:hover .navlink::after {
 }
 
 .sublink {
-    margin: 5px 0;
+
     font-weight: 400;
     font-size: 14px;
     z-index: 3;
@@ -174,9 +189,29 @@ li:hover .navlink::after {
     height: 90vh;
     top:0;
     background-color: #fff;
-    -webkit-transition: right 2s ease; /* For Safari 3.1 to 6.0 */
-    transition: right 2s ease;
+    -webkit-transition: right 1s ease; /* For Safari 3.1 to 6.0 */
+    transition: right 1s ease;
 }
+
+.mobile-nav {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100%;
+    /*border: 1px solid black;*/
+}
+
+.mobile-nav li {
+    margin-right: 0;
+    padding: 30px;
+    min-width: 165px;
+    border-bottom: 1px solid black;
+}
+
+.mobile-nav li:nth-child(4) {
+    border-bottom: none; 
+}
+
 /* ----------nav links---------- */
 /* -------------------------header------------------------- */
 
@@ -246,12 +281,43 @@ li:hover .navlink::after {
 /* -------------------------facilities------------------------- */
 
 
-/* ------------------------- General ------------------------- */
-#info {
-    background-color: rgb(0,255,255);
+/* -------------------------classes------------------------- */
+#classes {
+    background-color: rgb(255,255,255);
     height: 400px;
     margin: 0;
     /*border: 1px solid black;*/
+}
+/* -------------------------classes------------------------- */
+
+
+/* ------------------------- General ------------------------- */
+#info-box {
+    background-color: rgb(0,255,255);
+    margin: 0;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+
+#general-info {
+    padding-left: 5%;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+}
+
+#map {
+    padding: 30px 5%;
+    /*border: 1px solid black;*/
+}
+
+h4 {
+    font-family: Orbitron;
+    font-weight: 500;
+    font-size: 1em;
 }
 /* ------------------------- General ------------------------- */
 

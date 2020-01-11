@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron:bold|Raleway:400,600,700,800&display=swap"
+	<link href="https://fonts.googleapis.com/css?family=Orbitron::400,500,600,700|Raleway:400,600,700,800&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
@@ -23,26 +23,34 @@
 	<!-- sm_screen -->
 	<div class="sm-header">
 		<div class="gym-logo text-uppercase text-center">Milestone<span>Fitness Club</span></div>
-		<div class="navburger text-right" onclick="myFunction(this)">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
+		<div class="burger-container">
+			<div class="navburger" onclick="burgerTransform(this); divSlide();">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 	</div>
 	<!-- /sm_screen -->
 
-	<div class="hero-img">
-		<div id="navslide" style="right: -100%"></div>
-        
 
+	<div class="hero-img">
+		<div id="navslide" style="right: -100%">
+			<ul class="text-uppercase mobile-nav text-center">
+				<li><i class="fas fa-dumbbell fa-lg d-block"></i>The gym</li>
+				<li><a href='#membership'><i class="fas fa-users fa-lg d-block"></i>Membership</a></li>
+				<li><a href='#info-box'><i class="fas fa-info fa-lg d-block"></i>General</a></li>
+				<li><button type="button" id="login-btn" class="text-uppercase btn-square"><i class="fas fa-user"></i> login</button>
+				</li>
+			</ul>
+		</div>
 
 		<!-- lg_screen -->
 		<div class="lg-header">
 			<div class="gym-logo text-uppercase text-center">Milestone<span>Fitness Club</span></div>
 			<ul class="text-uppercase text-center">
 				<li class="dropdown">
-					<a href="javascript:void(0)"
-						class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
+					<a href="#" class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
 						<i class="fas fa-sort-down"></i></a>
 					<div class="dropdown-content">
 						<div class="subitem">
@@ -61,7 +69,7 @@
 				</li>
 				<li><a href="#membership" class="navlink"><i class="fas fa-users fa-lg d-md-block"></i>Membership</a>
 				</li>
-				<li><a href="#info" class="navlink"><i class="fas fa-info fa-lg d-md-block"></i>General</a></li>
+				<li><a href="#info-box" class="navlink"><i class="fas fa-info fa-lg d-md-block"></i>General</a></li>
 			</ul>
 		</div>
 		<!-- /lg_screen -->
@@ -84,15 +92,43 @@
 
 	<!--- /facilities --->
 
-	<!--- general deatils --->
-	<div id="info">
+	<!--- classes --->
+	<div id="classes">
 	</div>
 
-	<!--- general deatils --->
+	<!--- classes --->
+
+	<!--- general details --->
+	<div id="info-box" class="container-fluid">
+		<div class="row">
+			<div id="map" class="d-none d-md-block text-right">
+				<img alt="Area Map" src="https://www.scribblemaps.com/api/maps/images/450/450/v2zWVYhGT1.png" />
+            </div>
+			<div id="general-info" class="col-12 col-md-6 d-flex justify-content-md-start align-items-md-center">
+				<div>
+					<h4 class="text-uppercase">Milestone Fitness Club</h4>
+					<p>Harrow Road, London, NW10</p>
+                    <p><i class="far fa-envelope"></i> hello@milestonefitness.com</p>
+					<p><i class="fas fa-phone"></i> 02035698045</p>
+                    <br>
+
+					<h4>Opening Hours</h4>
+					<p>Mon - Fri: 06:00 - 23:00</p>
+					<p>Sat: 07:00- 22:30</p>
+					<p>Sun: 07:00- 20:00</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- general details --->
 
 	<script>
-    function myFunction(x) {
+		function burgerTransform(x) {
   x.classList.toggle("change");
+        }
+        function divSlide() {
 
   var element = document.getElementById("navslide");
   if (element.style.right === "-100%") {
