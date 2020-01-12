@@ -249,6 +249,11 @@ li:hover .navlink::after {
     font-weight: 600;
 }
 
+.btn-square:focus {
+    outline: 1px solid rgb(255,0,255);
+    box-shadow: 0 0 3px 0.2rem rgb(255,0,255);
+}
+
 #join-btn {
     background-color: #fff;
     margin: 5px;
@@ -276,14 +281,19 @@ li:hover .navlink::after {
 /* -------------------------facilities------------------------- */
 
 
-/* -------------------------classes------------------------- */
-#classes {
-    background-color: rgb(255,255,255);
-    height: 400px;
-    margin: 0;
-    /*border: 1px solid black;*/
+/* -------------------------membership------------------------- */
+.pricing-plans {
+  padding: 15px;
 }
-/* -------------------------classes------------------------- */
+
+.card {
+    margin: 15px 0;
+}
+
+.card-header {
+    background-color: rgb(255,0,255);
+}
+/* -------------------------membership------------------------- */
 
 
 /* ------------------------- General ------------------------- */
@@ -295,7 +305,7 @@ li:hover .navlink::after {
 }
 
 .general-info {
-    padding: 15px 0;
+    padding: 15px;
     /*border: 1px solid black;*/
 }
 
@@ -305,8 +315,7 @@ li:hover .navlink::after {
 }
 
 img {
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
     display: inline-block;
 }
 
