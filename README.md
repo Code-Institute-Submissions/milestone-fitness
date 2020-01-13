@@ -6,7 +6,7 @@ Milestone Fitness Club is a fictional gym website. It provides details about the
 
 ## Demo
 
-A live demo can be found [here](https://fran2488.github.io/milestone-fitness/index.html)
+A live demo can be found [here](https://fran2488.github.io/milestone-fitness/)
 
 ![Responsive Demo](assets/images/man-carrying-barbel-791763.jpg)
 
