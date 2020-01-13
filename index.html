@@ -125,10 +125,7 @@
                 <option value="year">12 Month Fixed Term £16.99 p/m</option>
                 <option value="day">Day Pass £6.99 p/d</option>
             </select>
-			<button type="submit" id="login-btn" class="btn-square">Submit</button>
-			<label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+			<button type="submit" id="login-btn" class="btn-square" onclick="window.location.reload();">Submit</button>
 		</div>
 
 		</form>
@@ -147,7 +144,7 @@
 					<label for="pswrd"><b>Password:</b></label>
 					<input type="password" placeholder="Enter Password" name="pswrd" required>
 
-					<button type="submit" id="login-btn" class="btn-square">Login</button>
+					<button type="submit" onid="login-btn" class="btn-square">Login</button>
 					<label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -235,27 +232,28 @@
 
 	<script>
 		function burgerTransform(x) {
-  x.classList.toggle("change");
+            x.classList.toggle("change");
         }
 
         function divSlide() {
+            var element = document.getElementById("navslide");
+            if (element.style.right === "-100%") {
+                element.style.right = "0";
+            } 
+            else {
+                element.style.right = "-100%";
+            }
+        } 
 
-  var element = document.getElementById("navslide");
-  if (element.style.right === "-100%") {
-    element.style.right = "0";
-  } else {
-    element.style.right = "-100%";
-  }
-} 
+        var modal = document.getElementById('joinModal');
+        var modal = document.getElementById('loginModal');
 
-var modal = document.getElementById('joinModal');
-var modal = document.getElementById('loginModal');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 	</script>
 </body>
 
