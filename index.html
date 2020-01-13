@@ -32,10 +32,17 @@
 	</div>
 	<!-- /sm_screen -->
 
+
 	<section class="hero-img">
 		<div id="navslide" style="right: -100%">
 			<ul class="text-uppercase mobile-nav text-center">
-				<li><i class="fas fa-dumbbell fa-lg d-block"></i>The gym</li>
+				<li><i class="fas fa-dumbbell fa-lg d-block"></i>The gym
+                    <div class="mobile-nav">
+						<a href="#features" class="sublink" onclick="divSlide()">Facilities</a>
+						<a href="assets/timetable.pdf" target="_blank" class="sublink" onclick="divSlide()">Timetable</a>
+						<a class="sublink" onclick="divSlide()">Classes</a>
+                    </div>
+				</li>
 				<li><a href="#membership" onclick="divSlide()"
 						tabindex="-1"><i class="fas fa-users fa-lg d-block"></i>Membership</a>
 				</li>
@@ -46,10 +53,11 @@
 			</ul>
 		</div>
 
+
 		<!-- lg_screen -->
 		<div class="lg-header container-xl">
 			<div class="gym-logo text-uppercase text-center">Milestone<span>Fitness Club</span></div>
-			<ul class="text-uppercase text-center">
+			<ul id="lg-nav" class="text-uppercase text-center">
 				<li class="dropdown">
 					<a href="#" class="navlink dropbtn"><i class="fas fa-dumbbell fa-lg d-md-block"></i>The Gym
 						<i class="fas fa-sort-down"></i></a>
@@ -81,6 +89,7 @@
 			<button type="button" id="join-btn" class="text-uppercase btn-square" onclick="document.getElementById('joinModal').style.display='block'">Join!</button><br>
 			<button type="button" id="login-btn" class="text-uppercase btn-square" onclick="document.getElementById('loginModal').style.display='block'"><i class="fas fa-user"></i> Login</button>
 		</div>
+
 
 		<div id="joinModal" class="modal">
 			<form class="modal-content animate" action="" method="post">
@@ -210,6 +219,7 @@
 		function burgerTransform(x) {
   x.classList.toggle("change");
         }
+
         function divSlide() {
 
   var element = document.getElementById("navslide");
