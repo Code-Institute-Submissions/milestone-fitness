@@ -79,8 +79,6 @@ body {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* ----------assets---------- */
-
 /* ----------nav links---------- */
 ul {
     display: flex;
@@ -227,9 +225,6 @@ div.mobile-nav {
 div.mobile-nav a {
     margin-top: 5px;
 }
-/* ----------nav links---------- */
-/* -------------------------header------------------------- */
-
 
 
 /* -------------------------call to action------------------------- */
@@ -284,10 +279,9 @@ div.mobile-nav a {
     margin: 5px;
     border-width: 0;
 }
-/* -------------------------call-to-action------------------------- */
 
 
-/* -------------------------modals------------------------- */
+/* -------------------------modal------------------------- */
 input, select {
     width: 100%;
     padding: 12px 20px;
@@ -338,7 +332,6 @@ input, select {
   to {transform: scale(1)}
 }
 
-/* -------------------------modals------------------------- */
 
 
 /* -------------------------sections------------------------- */
@@ -365,8 +358,6 @@ input, select {
     margin-bottom: 15px;
     /*border: 1px solid black;*/
 }
-/* -------------------------facilities------------------------- */
-
 
 /* -------------------------membership------------------------- */
 #membership {
@@ -374,7 +365,8 @@ input, select {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 95vh;
+    color: white;
+    text-align: center;
     /*border: 1px solid black;*/
 }
 
@@ -401,8 +393,10 @@ input, select {
 h5 span {
     font-size: 24px;
 }
-/* -------------------------membership------------------------- */
 
+#member-join {
+    margin: 10px;
+}
 
 /* ------------------------- General ------------------------- */
 #info-box {
@@ -435,8 +429,6 @@ h5 {
     font-weight: 600;
     font-size: 1em;
 }
-/* ------------------------- General ------------------------- */
-
 
 
 /* -------------------------media queries-------------------------*/
