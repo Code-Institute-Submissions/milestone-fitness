@@ -288,10 +288,10 @@ div.mobile-nav a {
 
 
 /* -------------------------modals------------------------- */
-input[type=text], input[type=password] {
+input, select {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin-bottom: 4px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -299,10 +299,6 @@ input[type=text], input[type=password] {
 
 .container {
     padding: 16px;
-}
-
-span.psw {
-    padding-top: 10px;
 }
 
 .modal {
@@ -323,9 +319,10 @@ span.psw {
     margin: 5% auto 15% auto; 
     border: 1px solid #888;
     width: 80%; 
+    overflow:scroll; 
+    max-height: calc(100% - 1rem);
 }
 
-/* Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
@@ -341,13 +338,6 @@ span.psw {
   to {transform: scale(1)}
 }
 
-
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-}
 /* -------------------------modals------------------------- */
 
 /* -------------------------facilities------------------------- */

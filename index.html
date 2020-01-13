@@ -95,31 +95,43 @@
 		<div id="joinModal" class="modal">
 			<form class="modal-content animate" action="" method="post">
 				<div class="change text-right">
-					<div class="d-inline-block navburger" onclick="document.getElementById('joinModal').style.display='none'" class="close" title="Close Modal"">
-						<div class="bar1" style="border:1px solid black;"></div>
-						<div class="bar2" style="border:1px solid black;"></div>
-						<div class="bar3" style="border:1px solid black;"></div>
-					</div>
+					<div class="d-inline-block" onclick="document.getElementById('joinModal').style.display='none'"
+						class="close" title="Close Modal"">
+						<div class=" bar1" style="border:1px solid black;"></div>
+					<div class="bar2" style="border:1px solid black;"></div>
+					<div class="bar3" style="border:1px solid black;"></div>
 				</div>
+		</div>
 
-				<div class="container">
-					<p>Submit your details below and one of our team will get in touch.</p>
-					<label for="fname"><b>First Name:</b></label>
-					<input type="text" placeholder="Enter First Name" name="fname" required>
+		<div class="container">
+			<p>Please submit your details below and one of our team will get in touch.</p>
+			<label for="fname"><b>First Name:</b></label>
+			<input type="text" placeholder="Enter First Name" name="fname" required>
+        
 
-					<label for="lname"><b>Last Name:</b></label>
-					<input type="text" placeholder="Enter Last Name" name="lname" required>
+			<label for="lname"><b>Last name:</b></label>
+			<input type="text" placeholder="Enter Last Name" name="lname" required>
 
-					<button type="submit" id="login-btn" class="btn-square">Submit</button>
-					<label>
+			<label for="phone"><b>Phone number:</b></label>
+			<input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+			<label for="email"><b>Email address:</b></label>
+			<input type="email" placeholder="Enter Email Address" name="email" required>
+
+			<label for="membership"><b>Which plan you are interested in?</b></label>
+			<select name="plan">
+                <option value="deciding">Undecided</option>
+                <option value="month">1 Month Pass £19.99 p/m</option>
+                <option value="year">12 Month Fixed Term £16.99 p/m</option>
+                <option value="day">Day Pass £6.99 p/d</option>
+            </select>
+			<button type="submit" id="login-btn" class="btn-square">Submit</button>
+			<label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-				</div>
+		</div>
 
-				<div class="container">
-					<span class="psw">Forgot <a href="#">password?</a></span>
-				</div>
-			</form>
+		</form>
 		</div>
 
 		<div id="loginModal" class="modal">
