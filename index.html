@@ -37,11 +37,12 @@
 		<div id="navslide" style="right: -100%">
 			<ul class="text-uppercase mobile-nav text-center">
 				<li><i class="fas fa-dumbbell fa-lg d-block"></i>The gym
-                    <div class="mobile-nav">
+					<div class="mobile-nav">
 						<a href="#features" class="sublink" onclick="divSlide()">Facilities</a>
-						<a href="assets/timetable.pdf" target="_blank" class="sublink" onclick="divSlide()">Timetable</a>
+						<a href="assets/timetable.pdf" target="_blank" class="sublink"
+							onclick="divSlide()">Timetable</a>
 						<a class="sublink" onclick="divSlide()">Classes</a>
-                    </div>
+					</div>
 				</li>
 				<li><a href="#membership" onclick="divSlide()"
 						tabindex="-1"><i class="fas fa-users fa-lg d-block"></i>Membership</a>
@@ -93,18 +94,23 @@
 
 		<div id="joinModal" class="modal">
 			<form class="modal-content animate" action="" method="post">
-				<div class="close-icon">
-					<span onclick="document.getElementById('joinModal').style.display='none'" class="close" title="Close Modal">CLOSE</span>
+				<div class="change text-right">
+					<div class="d-inline-block navburger" onclick="document.getElementById('joinModal').style.display='none'" class="close" title="Close Modal"">
+						<div class="bar1" style="border:1px solid black;"></div>
+						<div class="bar2" style="border:1px solid black;"></div>
+						<div class="bar3" style="border:1px solid black;"></div>
+					</div>
 				</div>
 
-				<div class="container text-uppercase">
-					<label for="user"><b>Username:</b></label>
-					<input type="text" placeholder="Enter Username" name="user" required>
+				<div class="container">
+					<p>Submit your details below and one of our team will get in touch.</p>
+					<label for="fname"><b>First Name:</b></label>
+					<input type="text" placeholder="Enter First Name" name="fname" required>
 
-					<label for="pswrd"><b>Password:</b></label>
-					<input type="password" placeholder="Enter Password" name="pswrd" required>
+					<label for="lname"><b>Last Name:</b></label>
+					<input type="text" placeholder="Enter Last Name" name="lname" required>
 
-					<button type="submit" id="login-btn" class="btn-square">Login</button>
+					<button type="submit" id="login-btn" class="btn-square">Submit</button>
 					<label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
