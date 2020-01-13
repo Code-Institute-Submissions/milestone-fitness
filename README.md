@@ -24,7 +24,7 @@ The target audience may be from different demographics. They are apirational ind
 
 Although it would be nice to have a feature that provides details of daily or weekly challenges, this would require skills beyond my scope, and should be left for a future feature.
 
-## Structure
+### Structure
 The Facilities section will provide photos and short descriptions of the facilities at the gym
 A small map will appear in the general information section, but only on larger screen sizes.
 
@@ -44,6 +44,8 @@ I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel 
 - As an existing gym member, I want to access the class schedule to see when my prefered class is available
 
 ## Features
+
+### Existing Features
 1.  ### Facilities
     Showcases what the gym can offer its mambers to serve their personal fitness journey. For example, a swimming pool, 2 studios, a fully quipled gym and a snack bar
 
@@ -56,16 +58,12 @@ I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel 
 1. ### General information
     Provides other key information such as the location, contact details and opening hours.
  
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- In the future I would like to add
+- In the future I would like to provide details of daily or weekly challenges. This would help keep members engaged and motivated.
+- Create a Members Section so that the login feature fully functions in taking the user to their own account page.
+
+
 
 ## Technologies Used
 
@@ -104,24 +102,18 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/fran2488/milestone-fitness.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from Pexels.com, courtesy of Tim Savage and Victor Freitas
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
