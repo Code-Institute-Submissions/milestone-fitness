@@ -14,8 +14,8 @@ A live demo can be found [here](index.html)
 
 ### Strategy
 The overall aim is to attract new sign-ups  and acheive the satisfaction and retention of existing members.
-The website will enable users to find practical information about the gym, to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support)
-The target audience may be from different demographics. They are apirational individuals and may be looking to make a lifestyle change. The gym serves to help them commit to their goals. It should be positive, energetic and optimistic.
+The website will enable users to find practical information about the gym, to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support).
+The target audience may be from different demographics. They are apirational individuals and may be looking to make a lifestyle change. The gym serves to help them commit to their goals and the project outcome should be positive, energetic and optimistic.
 
 ### Scope 
 
