@@ -27,7 +27,7 @@ The target audience may be from different demographics. They are apirational ind
 
 ### Surface
 
-I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel bright and energetic. The 'Orbitron' typeface from google fonts was chosen for the Milestone logo for it's modern and geometric form, as it helped to portray both robustness and refinement. I paired it with the Raleway font for use in the body text, as it was equally modern and appropriately legilble.
+I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel vibrant and energetic. The 'Orbitron' typeface from google fonts was chosen for the Milestone logo for it's modern and geometric form, as it helped to portray both robustness and refinement. I paired it with the Raleway font for use in the body text, as it was equally modern and appropriately legilble.
 
 ### User Stories
 - As a customer looking to join a gym, I want to know what this gym has to offer and whether it will provide value for money
