@@ -1,4 +1,4 @@
-# Milestone Fitness
+# Milestone Fitness Club
 
 #### Stream One Project: User-Centric Frontend Development - Code Institute
 
@@ -13,20 +13,29 @@ A live demo can be found [here](index.html)
 ## UX
 
 ### Strategy
-The overall aim is to attract new sign-ups  and acheive the satisfaction and retention of existing members.
-The website will enable users to find practical information about the gym, to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support).
+The overall aim is to attract new sign-ups and acheive the satisfaction and retention of existing members.
+The website will enable users to find practical information about the gym to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support).
 The target audience may be from different demographics. They are apirational individuals and may be looking to make a lifestyle change. The gym serves to help them commit to their goals and the project outcome should be positive, energetic and optimistic.
 
 ### Scope 
+- The gym location, contact details, opening hours and membership costs are all vital pieces of information that should be available. 
+- The facilities and class schedule are key to providing information about the value of joining Milestone Fitness Club.
+- A downloadalbe downloadable timetable should be available to all users to be used as a reference tool.
 
+Although it would be nice to have a feature that provides details of daily or weekly challenges, this would require skills beyond my scope, and should be left for a future feature.
 
-### Structure
+## Structure
+The Facilities section will provide photos and short descriptions of the facilities at the gym
+A small map will appear in the general information section, but only on larger screen sizes.
+
 
 ### Skeleton
+The Navigation menu is collapsed into a burger icon on mobile deives. The icon sits within a header at the top of the page and clicking on it triggers the navigation pane to slide in from off screen on the right. 
+
+On larger devices, the navigation menu appears to have expanded. This is a separate header, not displayed on smaller devices. It is displayed over the background 'hero' image as opposed to appearing before it. 
 #### Wireframes
 
 ### Surface
-
 I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel vibrant and energetic. The 'Orbitron' typeface from google fonts was chosen for the Milestone logo for it's modern and geometric form, as it helped to portray both robustness and refinement. I paired it with the Raleway font for use in the body text, as it was equally modern and appropriately legilble.
 
 ### User Stories
@@ -35,9 +44,8 @@ I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel 
 - As an existing gym member, I want to access the class schedule to see when my prefered class is available
 
 ## Features
-
 1.  ### Facilities
-    An overview of what the gym can offer its mambers to facilitate their fitness journey. For example, a swimming pool, 2 studios, a fully quipled gym and a snack bar
+    Showcases what the gym can offer its mambers to serve their personal fitness journey. For example, a swimming pool, 2 studios, a fully quipled gym and a snack bar
 
 1. ### Timetable: 
     A downloadable schedule to provide members with timings for the available classes.
