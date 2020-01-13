@@ -2,7 +2,7 @@
 
 #### Stream One Project: User-Centric Frontend Development - Code Institute
 
-Milestone Fitness Club is a fictional gym website. It provides details about the location of the gym, it's opening hours, facilities, classes and membership costs. It serves as both a marketing platform to encourage new sign-ups and as platform for existing customers looking for key information
+Milestone Fitness Club is a fictional gym website. It provides details about the location of the gym, it's opening hours, facilities, classes and membership costs. It serves as both a marketing platform to encourage new sign-ups and as platform for existing customers looking for key information.
 
 ## Demo
 
@@ -13,10 +13,9 @@ A live demo can be found [here](index.html)
 ## UX
 
 ### Strategy
-The overall aim is to attract new members and acheive the satisfaction and retention of existing members.
-The website will provide an insight into what the gym has to offer and how it can serve their fitness goals.
-Users will able find practical information about the gym to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support)
-The target audience may be from different demographics. They are apirational and many are looking to make a lifestyle change. The gym serves to help them commit to their goals. It should be positive, energetic and optimistic.
+The overall aim is to attract new sign-ups  and acheive the satisfaction and retention of existing members.
+The website will enable users to find practical information about the gym, to maximize their enjoyment of what is on offer (Appropriate classes, Awareness of opening times, Participation in events and challenges, access to support)
+The target audience may be from different demographics. They are apirational individuals and may be looking to make a lifestyle change. The gym serves to help them commit to their goals. It should be positive, energetic and optimistic.
 
 ### Scope 
 
@@ -28,7 +27,7 @@ The target audience may be from different demographics. They are apirational and
 
 ### Surface
 
-I chose to use cyan and magenta in my color scheme as I wanted the page to feel bright and energetic. The Orbitron typeface from google fonts was chosen for the Milestone logo for it's modern, geometric form as this helped to portray robustness and refinement. I paired it with the Raleway font for use in the body text, as this was equally modern and easily legilble.
+I chose to use Cyan and Magenta in my color scheme as I wanted the page to feel bright and energetic. The 'Orbitron' typeface from google fonts was chosen for the Milestone logo for it's modern and geometric form, as it helped to portray both robustness and refinement. I paired it with the Raleway font for use in the body text, as it was equally modern and appropriately legilble.
 
 ### User Stories
 - As a customer looking to join a gym, I want to know what this gym has to offer and whether it will provide value for money
@@ -41,13 +40,13 @@ I chose to use cyan and magenta in my color scheme as I wanted the page to feel 
     An overview of what the gym can offer its mambers to facilitate their fitness journey. For example, a swimming pool, 2 studios, a fully quipled gym and a snack bar
 
 1. ### Timetable: 
-    A downloadable schedule to provide members with timings for the available class
+    A downloadable schedule to provide members with timings for the available classes.
 
 1. ### Membership: 
-    Provides 3 different membership options and the cost of each
+    Provides 3 different membership options and the cost of each.
 
 1. ### General information
-    Provides other key information such as the location, contact details and opening hours
+    Provides other key information such as the location, contact details and opening hours.
  
 ### Existing Features
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
