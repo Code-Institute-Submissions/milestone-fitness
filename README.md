@@ -113,7 +113,12 @@ To run locally, you can clone this repository directly into the editor of your c
 
 
 ### Media
-- The photos used in this site were obtained from Pexels.com, courtesy of Tim Savage and Victor Freitas
-
+- The photos used in this site were obtained from Pexels.com.
+Background image of [woman jumping](https://www.pexels.com/photo/photo-of-woman-jumping-1921761/): Photo by Tim Savage from Pexels
+Background image of [man carrying barbel](https://www.pexels.com/photo/man-carrying-barbel-791763/): Photo by Victor Freitas from Pexels
+Yoga [roundel](https://www.pexels.com/photo/people-exercising-892682/): Photo by Tim Savage from Pexels
+Weights [roundel](https://www.pexels.com/photo/bodybuilding-close-up-dumbbells-equipment-260352/): pixabay
+Cardio [roundel](https://www.pexels.com/photo/an-on-treadmill-1954524/): Photo by William Choquette from Pexels
+Water [roundel](https://www.pexels.com/photo/three-clear-water-bottles-2479095/): Photo by Suzy Hazelwood from Pexels
 ### Acknowledgements
 

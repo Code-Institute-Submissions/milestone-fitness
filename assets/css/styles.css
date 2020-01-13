@@ -340,14 +340,20 @@ input, select {
 
 /* -------------------------modals------------------------- */
 
-/* -------------------------facilities------------------------- */
-#features {
-    height: 400px;
-    margin: 0;
-    /*border: 1px solid black;*/
+
+/* -------------------------sections------------------------- */
+.section-title {
+    font-size: 20px;
+    margin: 25px;
 }
 /* -------------------------facilities------------------------- */
-
+.gym-facilities {
+    padding: 20px 0;
+}
+/* -------------------------facilities------------------------- */
+#features {
+    background-color: #fff;
+}
 
 /* -------------------------membership------------------------- */
 #membership {
@@ -355,7 +361,6 @@ input, select {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    margin: 0;
     height: 95vh;
     /*border: 1px solid black;*/
 }
@@ -389,8 +394,6 @@ h5 span {
 /* ------------------------- General ------------------------- */
 #info-box {
     background-color: rgb(0,255,255);
-    margin: 0;
-    height: auto;
     width: 100%;
 }
 
