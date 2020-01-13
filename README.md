@@ -8,7 +8,6 @@ Milestone Fitness Club is a fictional gym website. It provides details about the
 
 A live demo can be found [here](https://fran2488.github.io/milestone-fitness/)
 
-![Responsive Demo](assets/images/man-carrying-barbel-791763.jpg)
 
 ## UX
 
@@ -110,15 +109,27 @@ To run locally, you can clone this repository directly into the editor of your c
 ## Credits
 
 ### Content
+The animated burger icon was borrowed from[w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js)
+The navigation animations were inspired by my past experiments with html based on the following
 
 
 ### Media
 - The photos used in this site were obtained from Pexels.com.
 Background image of [woman jumping](https://www.pexels.com/photo/photo-of-woman-jumping-1921761/): Photo by Tim Savage from Pexels
+
 Background image of [man carrying barbel](https://www.pexels.com/photo/man-carrying-barbel-791763/): Photo by Victor Freitas from Pexels
+
 Yoga [roundel](https://www.pexels.com/photo/people-exercising-892682/): Photo by Tim Savage from Pexels
+
 Weights [roundel](https://www.pexels.com/photo/bodybuilding-close-up-dumbbells-equipment-260352/): pixabay
+
 Cardio [roundel](https://www.pexels.com/photo/an-on-treadmill-1954524/): Photo by William Choquette from Pexels
+
 Water [roundel](https://www.pexels.com/photo/three-clear-water-bottles-2479095/): Photo by Suzy Hazelwood from Pexels
+
+Shower [roundel](https://www.pexels.com/photo/black-shower-head-switched-on-161502/): pixabay
+
+Pool [roundel](https://www.pexels.com/photo/people-doing-swim-race-1263349/): Photo by Jim De Ramos from Pexels
+
 ### Acknowledgements
 

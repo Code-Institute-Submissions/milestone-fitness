@@ -41,7 +41,6 @@
 						<a href="#features" class="sublink" onclick="divSlide()">Facilities</a>
 						<a href="assets/timetable.pdf" target="_blank" class="sublink"
 							onclick="divSlide()">Timetable</a>
-						<a class="sublink" onclick="divSlide()">Classes</a>
 					</div>
 				</li>
 				<li><a href="#membership" onclick="divSlide()"
@@ -49,7 +48,7 @@
 				</li>
 				<li><a href="#info-box" onclick="divSlide()"
 						tabindex="-1"><i class="fas fa-info fa-lg d-block"></i>General</a></li>
-				<li><button type="button" id="login-btn" class="text-uppercase btn-square" onclick="document.getElementById('id01').style.display='block'" tabindex="-1"><i class="fas fa-user"></i> login</button>
+				<li><button type="button" id="join-btn" class="text-uppercase btn-square" onclick="document.getElementById('id01').style.display='block'" tabindex="-1">Join!</button>
 				</li>
 			</ul>
 		</div>
@@ -71,10 +70,6 @@
 							<a href="assets/timetable.pdf" target="_blank" class="sublink text-uppercase">Timetable</a>
 							<div class="item_bg"></div>
 						</div>
-						<div class="subitem">
-							<a href="#classes" class="sublink text-uppercase">Classes</a>
-							<div class="item_bg"></div>
-						</div>
 					</div>
 				</li>
 				<li><a href="#membership" class="navlink"><i class="fas fa-users fa-lg d-md-block"></i>Membership</a>
@@ -84,11 +79,9 @@
 		</div>
 		<!-- /lg_screen -->
 
-
 		<div class="call-to-action text-center">
-			<h1 class="text-uppercase"><span>pump up the jam</span><br><span>pump it up!</span></h1>
-			<button type="button" id="join-btn" class="text-uppercase btn-square" onclick="document.getElementById('joinModal').style.display='block'">Join!</button><br>
-			<button type="button" id="login-btn" class="text-uppercase btn-square" onclick="document.getElementById('loginModal').style.display='block'"><i class="fas fa-user"></i> Login</button>
+			<h1 class="text-uppercase"><span>make fitness</span><br><span>your favourite habit!</span></h1>
+			<button type="button" class="text-uppercase btn-square" onclick="document.getElementById('joinModal').style.display='block'">Join!</button>
 		</div>
 
 
@@ -125,7 +118,7 @@
                 <option value="year">12 Month Fixed Term £16.99 p/m</option>
                 <option value="day">Day Pass £6.99 p/d</option>
             </select>
-			<button type="submit" id="login-btn" class="btn-square">Submit</button>
+			<button type="submit" id="join-btn" class="btn-square">Submit</button>
 		</div>
 
 		</form>
@@ -167,56 +160,56 @@
                 <h2 class="text-center text-uppercase section-title">Facilities</h2>
             </div>
         </div>
-        <div class="row align-items-stretch">
-            <div class="col-md-6 col-lg-4">
+        <div class="row align-items-center">
+
+            <div class="col-md-6 col-lg-4 gym-feature">
                 <div class="row">
                     <div class="col-3">
-                        <img src="assets/trumb/airport.png" class="mx-auto d-block" alt="International-airport">
+                        <img src="assets/images/bodybuilding-close-up-dumbbells-equipment-260352.jpg" class="mx-auto rounded-circle d-block feature-roundel" alt="Weights">
                     </div>
                     <div class="col-9 col-9-area">
-                        <h5>International airport</h5>
-                        <p>Cluj is connected to the over 40 most important cities in Europe, having the second
-                            largest international airport after Bucharest. From UK you can fly directly
-                            from London, Liverpool, Doncaster and Birmingham.
+                        <h5>Large Range of Weight Equipment</h5>
+                        <p>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+
+            <div class="col-md-6 col-lg-4 gym-feature">
                 <div class="row">
                     <div class="col-3">
-                        <img src="assets/trumb/palace.png" class="mx-auto d-block" alt="Tourist-attractions">
+                        <img src="assets/images/an-on-treadmill-1954524.jpg" class="mx-auto rounded-circle d-block feature-roundel" alt="Cardio">
                     </div>
                     <div class="col-9 col-9-area">
-                        <h5>Medieval attractions</h5>
-                        <p>In Cluj you can visit a multitude of medieval tourist objectives, dating from the 15th -
-                            18th centuries such as the Tailor's Bastion, the Baroque
-                            Bánffy Palace, the Franciscan Church but also many other.
+                        <h5>A Huge Range of Cardio Equipment</h5>
+                        <p>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+
+            <div class="col-md-6 col-lg-4 gym-feature">
                 <div class="row">
                     <div class="col-3">
-                        <img src="assets/trumb/music-festivals.png" class="mx-auto d-block" alt="Music-festivals">
+                        <img src="assets/images/people-exercising-892682.jpg" class="mx-auto rounded-circle d-block feature-roundel" alt="Classes">
                     </div>
                     <div class="col-9 col-9-area">
-                        <h5>City of festivals</h5>
-                        <p>Have you heard of the Untold Festival? If not Google it. Every Year,
-                            top 10 biggest DJs in the world, such as Armin van Buuren and Martin Garix perform in Cluj
-                            for 400,000 people from all over the world.
+                        <h5>More than 20 Different Classes</h5>
+                        <p>From Pilates to African dance to Circuits, there is something here for everyone at Milestone Fitness packed into a busy timetable.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+    
+
+
+            <div class="col-md-6 col-lg-4 gym-feature">
                 <div class="row">
                     <div class="col-3">
-                        <img src="assets/trumb/chef.png" class="mx-auto d-block" alt="Gastronomy">
+                       <img src="assets/images/black-shower-head-switched-on-161502.jpg" class="mx-auto rounded-circle d-block feature-roundel" alt="Shower">
                     </div>
                     <div class="col-9 col-9-area">
-                        <h5>Gastronomy</h5>
+                        <h5>Newly Refurbished Changing Rooms and Showers</h5>
                         <p>Cluj has a rich gastronomy culture with deep roots the
                             Austro-Hungarian Empire and the famous ones are Varza a la Cluj or Gulas. You can try kürtős
                             kalács, a very good dessert with a Szekler specific.
@@ -251,7 +244,7 @@
 						Monthly
 					</div>
 					<div class="card-body">
-						<h5 class="card-title"><span>£17.99</span> per month</h5>
+						<h5 class="card-title"><span>£19.99</span> per month</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					</div>
 				</div>
@@ -261,7 +254,7 @@
 						Fixed
 					</div>
 					<div class="card-body">
-						<h5 class="card-title"><span>£14.99</span> per month for a year</h5>
+						<h5 class="card-title"><span>£16.99</span> per month for a year</h5>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 					</div>
 				</div>

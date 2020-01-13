@@ -252,6 +252,9 @@ div.mobile-nav a {
     margin: 10px;
     /*border: 1px solid black;*/
 }
+ h1 {
+     margin: 30px;
+ }
 
 .call-to-action h1 span {
     font-weight: 700;
@@ -267,22 +270,19 @@ div.mobile-nav a {
     width: 100px;
     padding: 10px 0;
     font-weight: 600;
+    background-color: #fff;
 }
 
 .btn-square:focus {
     outline: 1px solid rgb(255,0,255);
     box-shadow: 0 0 3px 0.2rem rgb(255,0,255);
+    background-color: rgb(0,255,255);
 }
 
 #join-btn {
-    background-color: #fff;
-    margin: 5px;
-    border-width: 0;
-}
-
-#login-btn {
     background-color: rgb(0,255,255);
     margin: 5px;
+    border-width: 0;
 }
 /* -------------------------call-to-action------------------------- */
 
@@ -347,13 +347,26 @@ input, select {
     margin: 25px;
 }
 /* -------------------------facilities------------------------- */
-.gym-facilities {
-    padding: 20px 0;
-}
-/* -------------------------facilities------------------------- */
 #features {
     background-color: #fff;
 }
+
+.gym-facilities {
+    padding: 20px 0;
+}
+
+.feature-roundel {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.gym-feature {
+    margin-bottom: 15px;
+    /*border: 1px solid black;*/
+}
+/* -------------------------facilities------------------------- */
+
 
 /* -------------------------membership------------------------- */
 #membership {
